@@ -42,9 +42,9 @@ for (var i = 0; i < 100; i++) {
 //fa un array da 10 nomi
 for (var i = 0; i < 10; i++) {
   dieci_giocatori.push(lista_giocatori[i].nome)
+  console.log(lista_giocatori[i]);
 }
 $('#dieci_giocatori').text(dieci_giocatori);
-console.log(dieci_giocatori);
 
 
 
