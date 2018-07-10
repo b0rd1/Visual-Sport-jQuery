@@ -9,9 +9,8 @@
 // Una volta generato il “database”, il programma deve chiedere all’utente di inserire un Codice Giocatore e il programma restituisce le statistiche.
 
 var lista_giocatori = [];
-var dieci_giocatori = [];
 
-//genera 3 lettere radom
+//genera 3 lettere random
 function makeId() {
   var nome = "";
   var lettere = "abcdefghijklmnopqrstuvwxyz";
@@ -39,15 +38,18 @@ for (var i = 0; i < 100; i++) {
   lista_giocatori.push(giocatore);
 }
 
-//fa un array da 10 nomi
-for (var i = 0; i < 10; i++) {
-  dieci_giocatori.push(lista_giocatori[i].nome)
-  console.log(lista_giocatori[i]);
+//stampa a video 5 giocatori
+for (var i = 0; i < 1; i++) {
+ $('#dieci_giocatori1').text(lista_giocatori[i].nome)
+ $('#dieci_giocatori2').text(lista_giocatori[i+1].nome)
+ $('#dieci_giocatori3').text(lista_giocatori[i+2].nome)
+ $('#dieci_giocatori4').text(lista_giocatori[i+3].nome)
+ $('#dieci_giocatori5').text(lista_giocatori[i+4].nome)
+ $('#dieci_giocatori6').text(lista_giocatori[i+5].nome)
 }
-$('#dieci_giocatori').text(dieci_giocatori);
 
 
-
+//funzione al click
 $('button').click(function() {
 
   var valoreTextArea = $('.text').val();
@@ -59,8 +61,8 @@ $('button').click(function() {
       $('#punti').html(lista_giocatori[i].punti);
       $('#rimbalzi').html(lista_giocatori[i].rimbalzi);
       $('#falli').html(lista_giocatori[i].falli);
-      $('#tiri_da_due').html(lista_giocatori[i].perc_2_punti);
-      $('#tiri_da_tre').html(lista_giocatori[i].perc_3_punti);
+      $('#tiri_da_due').html(lista_giocatori[i].perc_2_punti+'%');
+      $('#tiri_da_tre').html(lista_giocatori[i].perc_3_punti+'%');
       $('img').show();
       $('.stats').show();
 

@@ -1,18 +1,25 @@
+*{
+box-sizing: border-box;
+padding: 0;
+}
+
+body{
+  background: linear-gradient(to right,#252830,#1c1e24);
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  color: white;
+}
+
+h1{
+  font-size: 50px;
+}
+
 .container{
-  background: #F4F4F4;
   display: flex;
-  border: 1px solid black;
-  height: 200px;
-  width: 300px;
+  border: 1px solid lightgrey;
+  height: 300px;
+  width: 500px;
   margin: 0 auto;
-}
-
-.lista{
-  margin: 0 auto;
-}
-
-#nome{
-  background: red;
 }
 
 img{
@@ -23,19 +30,58 @@ img{
   display: none;
 }
 
-*{
-  font-size: 15px;
-  font-family: sans-serif;
+.stats div{
+  text-align: center;
+  padding: 20px 0px 0px 25px;
+}
+
+.area{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.lista1, .lista2{
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.lista2{
+  padding: 0px 0px 25px;
+}
+
+
+#dieci_giocatori{
+  font-size: 22px;
+  color: lightgrey;
+}
+
+.barra{
+  border-radius: 3px;
+  justify-content: center;
+  display: flex;
+  background: white;
+  width: 400px;
+  margin-bottom: 10px;
 }
 
 button{
+  font-family: 'Muli', sans-serif;
   font-size: 20px;
   border: 0px;
   padding: 15px;
   border-radius: 2px;
+  background: white;
+  outline: none;
 }
 
 .text{
+  outline: none;
+  resize: none;
+  font-family: 'Muli', sans-serif;
   font-size: 20px;
   padding: 15px;
   border-radius: 2px;
+  border: 0;
