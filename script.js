@@ -40,16 +40,16 @@ for (var i = 0; i < 100; i++) {
 
 //stampa a video 5 giocatori
 for (var i = 0; i < 1; i++) {
-  $('#dieci_giocatori1').text(lista_giocatori[i].nome)
-  $('#dieci_giocatori2').text(lista_giocatori[i + 1].nome)
-  $('#dieci_giocatori3').text(lista_giocatori[i + 2].nome)
-  $('#dieci_giocatori4').text(lista_giocatori[i + 3].nome)
-  $('#dieci_giocatori5').text(lista_giocatori[i + 4].nome)
-  $('#dieci_giocatori6').text(lista_giocatori[i + 5].nome)
+  $('#sei_giocatori1').text(lista_giocatori[i].nome)
+  $('#sei_giocatori2').text(lista_giocatori[i + 1].nome)
+  $('#sei_giocatori3').text(lista_giocatori[i + 2].nome)
+  $('#sei_giocatori4').text(lista_giocatori[i + 3].nome)
+  $('#sei_giocatori5').text(lista_giocatori[i + 4].nome)
+  $('#sei_giocatori6').text(lista_giocatori[i + 5].nome)
 }
 
 
-//funzione al click
+//funzione al clicksei
 $('button').click(function() {
 
   var valoreTextArea = $('.text').val();
