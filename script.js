@@ -40,12 +40,12 @@ for (var i = 0; i < 100; i++) {
 
 //stampa a video 5 giocatori
 for (var i = 0; i < 1; i++) {
- $('#dieci_giocatori1').text(lista_giocatori[i].nome)
- $('#dieci_giocatori2').text(lista_giocatori[i+1].nome)
- $('#dieci_giocatori3').text(lista_giocatori[i+2].nome)
- $('#dieci_giocatori4').text(lista_giocatori[i+3].nome)
- $('#dieci_giocatori5').text(lista_giocatori[i+4].nome)
- $('#dieci_giocatori6').text(lista_giocatori[i+5].nome)
+  $('#dieci_giocatori1').text(lista_giocatori[i].nome)
+  $('#dieci_giocatori2').text(lista_giocatori[i + 1].nome)
+  $('#dieci_giocatori3').text(lista_giocatori[i + 2].nome)
+  $('#dieci_giocatori4').text(lista_giocatori[i + 3].nome)
+  $('#dieci_giocatori5').text(lista_giocatori[i + 4].nome)
+  $('#dieci_giocatori6').text(lista_giocatori[i + 5].nome)
 }
 
 
@@ -61,8 +61,8 @@ $('button').click(function() {
       $('#punti').html(lista_giocatori[i].punti);
       $('#rimbalzi').html(lista_giocatori[i].rimbalzi);
       $('#falli').html(lista_giocatori[i].falli);
-      $('#tiri_da_due').html(lista_giocatori[i].perc_2_punti+'%');
-      $('#tiri_da_tre').html(lista_giocatori[i].perc_3_punti+'%');
+      $('#tiri_da_due').html(lista_giocatori[i].perc_2_punti + '%');
+      $('#tiri_da_tre').html(lista_giocatori[i].perc_3_punti + '%');
       $('img').show();
       $('.stats').show();
 
