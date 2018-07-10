@@ -38,7 +38,7 @@ for (var i = 0; i < 100; i++) {
   lista_giocatori.push(giocatore);
 }
 
-//stampa a video 5 giocatori
+//stampa a video 6 giocatori
 for (var i = 0; i < 1; i++) {
   $('#sei_giocatori1').text(lista_giocatori[i].nome)
   $('#sei_giocatori2').text(lista_giocatori[i + 1].nome)
