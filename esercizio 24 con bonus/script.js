@@ -129,9 +129,7 @@ if (domanda == 2) {
     }
     ricercaStatistica();
   }
-  else {
-    alert('Non hai scelto nessuna statistica')
-  }
+
 
   //calcola media
   function ricercaStatistica() {
@@ -141,9 +139,8 @@ if (domanda == 2) {
     for (var i = 0; i < arrayMedia.length - 1; i++) {
       var sommaPunti = sommaPunti + arrayMedia[i];
     }
-    var media = (sommaPunti / 100);
+    var media = Math.floor(sommaPunti / 100);
      alert('La media di ' + statisticaUtente + ' è: ' + media)
-     console.log(media);
      return media;
   }
 
