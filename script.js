@@ -129,7 +129,9 @@ if (domanda == 2) {
     }
     ricercaStatistica();
   }
-
+  else {
+    alert('Non hai scelto nessuna statistica')
+  }
 
   //calcola media
   function ricercaStatistica() {
