@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #252830, #1c1e24);
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  border: 1px solid lightgrey;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+img {
+  display: none;
+  height: 100%;
+}
+
+.stats {
+  display: none;
+}
+
+.stats div {
+  text-align: center;
+  padding: 20px 0px 0px 25px;
+}
+
+.area {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.lista1, .lista2 {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.lista2 {
+  padding: 0px 0px 25px;
+}
+
+#dieci_giocatori {
+  font-size: 22px;
+  color: lightgrey;
+}
+
+.barra {
+  border-radius: 3px;
+  justify-content: center;
+  display: flex;
+  background: white;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  border: 0px;
+  padding: 15px;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
+
+.text {
+  outline: none;
+  resize: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 2px;
+  border: 0;
+}
+
+.media, .esito_media {
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  height: 250px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.esito_media{
+  height: 50px;
+  display: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottone {
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0px 20px 0px;
+}
+
+
+.media div{
+  padding-bottom: 5px;
+}
+
+.bottone_media {
+  margin-top: 10px;
+  width: 500px;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  border: 0px;
+  padding: 15px;
+  border-radius: 2px;
+  background: white;
+  outline: none;
+}
