@@ -1,4 +1,4 @@
-# jquery-visual-sport
+# Visual-Sport-jQuery
 
 Il software deve generare casualmente le statistiche di gioco di 100 giocatori di basket per una giornata di campionato.
 In particolare vanno generate per ogni giocatore le seguenti informazioni, facendo attenzione che il numero generato abbia senso:
