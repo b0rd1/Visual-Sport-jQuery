@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Visual Sport jQuery</title>
+  </head>
+
+  <body>
+
+    <!-- Random Player -->
+    <div class="area">
+      <h1>Visual Sport jQuery</h1>
+      <div class="barra">
+        <input name="" value="" class="text" placeholder="ID Player">
+        <button type="button" name="button">Cerca</button>
+      </div>
+      <div>Random Players:</div>
+    </div>
+    <div class="lista"></div>
+
+    <!-- Scheda Giocatore -->
+    <div class="container">
+      <img src="immagine.png">
+      <div class="stats">
+        <div>
+          Nome:&nbsp<span id="lista_nomi"></span>
+        </div>
+        <div>
+          Punti:&nbsp<span id="punti"></span>
+        </div>
+        <div>
+          Rimbalzi:&nbsp<span id="rimbalzi"></span>
+        </div>
+        <div>
+          Falli:&nbsp<span id="falli"></span>
+        </div>
+        <div>
+          Percentuale tiri da 2:&nbsp<span id="tiri_da_due"></span>
+        </div>
+        <div>Percentuale tiri da 3:&nbsp<span id="tiri_da_tre"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scheda Media Giocatori -->
+    <div class="media">
+      <h3>Calcola Media su 100 Giocatori</h3>
+      <form id="myForm">
+        <div>
+          <input type="radio" name="radio" value="tiri">
+          Media Tiri
+        </div>
+        <div>
+          <input type="radio" name="radio" value="falli">
+          Media Falli
+        </div>
+        <div>
+          <input type="radio" name="radio" value="rimbalzi">
+          Media Rimbalzi
+        </div>
+        <div>
+          <input type="radio" name="radio" value="perc_2_punti">
+          Media Percentuale Tiri da 2 punti
+        </div>
+        <div>
+          <input type="radio" name="radio" value="perc_3_punti">
+          Media Percentuale Tiri da 3 punti
+        </div>
+      </form>
+    </div>
+
+    <div class="esito_media"></div>
+
+    <div class="bottone">
+      <button type="button" name="button" class="bottone_media">Calcola Media</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
