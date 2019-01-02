@@ -42,17 +42,21 @@ for (var i = 0; i < 100; i++) {
 
 //stampa a video 6 giocatori
 for (var i = 0; i < 12; i++) {
-
   $('.lista').append(`
     <span id="randomPlayer">` + lista_giocatori[i].nome + `</span>
     `);
-
 }
 
 //cerca utente
 $(document).on('click', 'button', function() {
-  var selectedPlayer = $('.text').val();
-  viewPlayer(selectedPlayer);
+  var selectedPlayer = $('.text').val().toUpperCase();
+
+  if (selectedPlayer.length == 0 || selectedPlayer.length < 6 || selectedPlayer.length > 6) {
+    $('.error').fadeIn(1500);
+    $('.error').fadeOut(1500);
+  } else {
+    viewPlayer(selectedPlayer);
+  }
 });
 
 //carica utente con click sul nome
@@ -63,6 +67,7 @@ $(document).on('click', '#randomPlayer', function() {
 
 //funzione che cerca il giocatore selezionato
 function viewPlayer(selectedPlayer) {
+
   for (var i = 0; i < lista_giocatori.length; i++) {
     var giocatore = lista_giocatori[i];
     if (selectedPlayer == giocatore.nome) {
@@ -76,7 +81,6 @@ function viewPlayer(selectedPlayer) {
       $('.stats').show();
     }
   }
-  return;
 }
 
 

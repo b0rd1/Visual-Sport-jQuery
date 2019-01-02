@@ -36,6 +36,12 @@ img {
   padding: 20px 0px 0px 25px;
 }
 
+.error {
+  display: none;
+  color: red;
+  text-align: center;
+}
+
 .area {
   flex-direction: column;
   align-items: center;
@@ -44,6 +50,7 @@ img {
 }
 
 .lista {
+  cursor: pointer;
   text-align: center;
   max-width: 30%;
   justify-content: center;
